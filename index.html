@@ -11,22 +11,41 @@
   <!-- K starts here -->
   <header>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-sm text-light" style="background-color: #252B42;">
-      <div class="container-fluid d-flex">
-        <a class="navbar-brand text-light fw-bold" href="#">BrandName</a>
-        <ul class="navbar-nav d-md-none d-flex flex-row gap-4">
-          <li class="nav-item"><img src="./assets/search.svg"></li>
-          <li class="nav-item"><img src="./assets/shopping.svg"></li>
-          <li>
-            <button class="navbar-toggler border-0 p-0 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" style="box-shadow: none">
-              <img src="./assets/menu.svg">
-            </button>
-          </li>
-        </ul> 
-      </div>
-      <div class="d-none d-md-block">
-        <button type="button" class="btn text-light" data-bs-toggle="button">Login</button>
-        <button type="button" class="btn text-light" style="background-color: #23A6F0;">Become a member<img src="./assets/arrow.svg"></button>
+    <nav class="navbar navbar-expand-lg text-light bg-dark p-4">
+    <style>
+      @media screen and (min-width: 575px) {
+          .navbar {
+            background-color: transparent;
+          }
+        }
+    </style>
+      <div class="container">
+        <div>
+          <a class="navbar-brand text-light fw-bold fs-2" href="#">BrandName</a>
+        </div>
+        <div class="d-none d-lg-block mx-4">
+          <ul class="list-unstyled d-flex flex-row m-0">
+            <li class="m-2"><a class="nav-item text-decoration-none text-light fs-4 ps-4" href="#">Home</a></li>
+            <li class="m-2"><a class="nav-item text-decoration-none text-light fs-4 ps-4" href="#">Product</a></li>
+            <li class="m-2"><a class="nav-item text-decoration-none text-light fs-4 ps-4" href="#">Pricing</a></li>
+            <li class="m-2"><a class="nav-item text-decoration-none text-light fs-4 ps-4" href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="navbar-nav d-lg-none d-flex flex-row gap-4">
+            <li class="nav-item"><img src="./assets/search.svg"></li>
+            <li class="nav-item"><img src="./assets/shopping.svg"></li>
+            <li class="nav-item">
+              <button class="navbar-toggler border-0 p-0 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" style="box-shadow: none;">
+                <img src="./assets/menu.svg">
+              </button>
+            </li>
+          </ul> 
+        </div>
+        <div class="d-none d-lg-flex w-100 justify-content-end">
+          <button type="button" class="btn text-light mx-4" data-bs-toggle="button">Login</button>
+          <button type="button" class="btn text-light mx-4" style="background-color: #23A6F0;">Become a member<img src="./assets/arrow.svg"></button>
+        </div>
       </div>
     </nav>
 
@@ -45,128 +64,187 @@
 
   <main>
     <!-- section1 -->
-    <section class="bg-overlay text-center d-flex flex-column justify-content-center vh-100 p-4 " style="background: url('./assets/hero-cover.jpg') no-repeat center / cover;">
+    <section class="bg-overlay text-center d-flex flex-column justify-content-center p-4" style="background: url('./assets/hero-cover.jpg') no-repeat center / cover; aspect-ratio: 16/9;
+    @media screen and (min-width: 575px) {
+      background-position: end;
+    };">
       <div class="container d-flex flex-column align-items-center text-light p-4">
-        <h1 class="fw-bold mb-4 " style="font-size: 2.5rem;">We Ensure A Best Insurance Service</h1>
+        <h1 class="fw-bold mb-4" style="font-size: 2.5rem;">We Ensure A Best Insurance Service</h1>
         <p class="p-4 mb-0">
           We know how large objects will act, 
           but things on a small scale just do not act that way.
         </p>
-        <button type="button" class="btn text-light rounded-pill my-3 px-4" style="background-color: #23A6F0;">Get Quote Now</button>
-        <button type="button" class="btn btn-outline-info text-light rounded-pill px-4">Learn More</button>
+        <div class="d-md-flex flex-row">
+          <button type="button" class="d-block btn text-light rounded-pill my-3 px-4" style="background-color: #23A6F0;">Get Quote Now</button>
+          <button type="button" class="d-block btn btn-outline-light text-light rounded-pill my-3 px-4">Learn More</button>
+  
+        </div>
       </div>
     </section>
 
     <!-- section2 -->
-    <section class="text-light text-center" style="background-color: #252B42;">
-      <div class="p-4 mx-4">
-        <img src="./assets/book.svg" class="w-auto mt-4 p-4">
-        <h3 class="fs-5">Peace of Mind</h3>
-        <p class="fw-light m-0">
-          So it really behaves like neither. 
-          <br>Now we have given up. 
-        </p>
-      </div>
-      <div class="p-4 mx-4">
-        <img src="./assets/save.png" class="w-auto p-4">
-        <h3 class="fs-5">Set For Life</h3>
-        <p class="fw-light m-0">
-          They were used to create the 
-          <br>machines that launched 
-        </p>
-      </div>
-      <div class="p-4 mx-4">
-        <img src="./assets/people.png" class="w-auto p-4">
-        <h3 class="fs-5">100% Satisfaction</h3>
-        <p class="fw-light m-0 pb-4 mb-4">
-          So it really behaves like neither. 
-          <br>Now we have given up. 
-        </p>
+    <section class="text-light text-center p-md-4" style="background-color: #252B42;">
+      <div class="container d-md-flex justify-content-center p-md-4">
+        <div class="p-4 mx-4">
+          <img src="./assets/book.svg" class="w-auto p-4">
+          <h3 class="fs-5">Peace of Mind</h3>
+          <p class="fw-light m-0">
+            So it really behaves like neither. 
+            <br>Now we have given up. 
+          </p>
+        </div>
+        <div class="p-4 mx-4">
+          <img src="./assets/save.png" class="w-auto p-4">
+          <h3 class="fs-5">Set For Life</h3>
+          <p class="fw-light m-0">
+            They were used to create the 
+            <br>machines that launched 
+          </p>
+        </div>
+        <div class="p-4 mx-4">
+          <img src="./assets/people.png" class="w-auto p-4">
+          <h3 class="fs-5">100% Satisfaction</h3>
+          <p class="fw-light m-0 pb-4 mb-4">
+            So it really behaves like neither. 
+            <br>Now we have given up. 
+          </p>
+        </div>
       </div>
     </section>
 
     <!-- section3 -->
-    <section class="text-light text-center" style="background-color: #8EC2F2;">
-      <div class="p-4">
-      <!-- mobile -->
-      <h2 class="fw-bold mt-4" style="font-size: 2.5rem;">What <br>Clients Say</h2>
-      <!-- desktop -->
-      <h2 class="d-none d-md-block">Industry</h2>
-      <p class="fw-light px-4 pt-2 mb-0 mx-3">
-        Problems trying to resolve the conflict between 
-        the two major realms of Classical physics: Newtonian mechanics
-      </p>
+    <section class="text-light text-center p-4 justify-content-center" style="background-color: #8EC2F2;">
+      <div class="p-4 container w-sm-75 w-md-50 ">
+        <div class="row p-4">
+          <!-- mobile -->
+          <h2 class="fw-bold mt-4 d-md-none" style="font-size: 2.5rem;">What <br>Clients Say</h2>
+          <!-- desktop -->
+          <h2 class="fw-bold mt-4 d-none d-md-block" style="font-size: 2.5rem;">Industry</h2>
+          <p class="fw-light pt-2 mb-0 mx-3 d-inline-block col-md-6 mx-auto">
+            Problems trying to resolve the conflict between 
+            the two major realms of Classical physics: Newtonian mechanics
+          </p>
+        </div>
       </div>
-      <div class="pb-4 px-4">
-        <div class="bg-white text-dark m-4 p-4 text-start">
-          <img src="./assets/user.1.png" class="d-none d-md-block">
-          <h3 class="mb-1 fw-bold">Regina Miles</h3>
-          <p class="mb-2">Designer</p>
-          <div class="mb-3">
-            <img src="./assets/y-star.svg">
-            <img src="./assets/y-star.svg">
-            <img src="./assets/y-star.svg">
-            <img src="./assets/y-star.svg">
-            <img src="./assets/w-star.svg">
-          </div>
-          <p class="fw-light pe-4 mb-0 me-4">
-            This proved to be impossible using the traditional concepts of space and time. 
-            Einstein developed a new view of time first and then space. 
-            This proved to be impossible using the traditional concepts of space and time. 
-            Einstein developed a new view of time first and then space.
-          </p>
+      <div class="container pb-4">
+        <div class="row p-4">
+          <!-- <div class="pb-4 gap-4"> -->
+            <div class="bg-white text-dark m-4 p-4 text-start position-relative col-md-4 mx-auto">
+              <img src="./assets/user.1.png" class="user d-none d-md-block">
+              <h3 class="mb-1 fw-bold ps-4">Regina Miles</h3>
+              <p class="mb-2 ps-4">Designer</p>
+              <div class="mb-3 ps-4">
+                <img src="./assets/y-star.svg">
+                <img src="./assets/y-star.svg">
+                <img src="./assets/y-star.svg">
+                <img src="./assets/y-star.svg">
+                <img src="./assets/w-star.svg">
+              </div>
+              <p class="fw-light pe-4 mb-0 me-4 ps-4">
+                This proved to be impossible using the traditional concepts of space and time. 
+                Einstein developed a new view of time first and then space. 
+                This proved to be impossible using the traditional concepts of space and time. 
+                Einstein developed a new view of time first and then space.
+              </p>
+            </div>
+            <div class="bg-white text-dark m-4 p-4 text-start position-relative col-md-4 mx-auto">
+              <img src="./assets/user.2.png" class="user d-none d-md-block">
+              <h3 class="mb-1 fw-bold ps-4">Regina Miles</h3>
+              <p class="mb-2 ps-4">Designer</p>
+              <div class="mb-3 ps-4">
+                <img src="./assets/y-star.svg">
+                <img src="./assets/y-star.svg">
+                <img src="./assets/y-star.svg">
+                <img src="./assets/y-star.svg">
+                <img src="./assets/w-star.svg">
+              </div>
+              <p class="fw-light pe-4 mb-0 me-4 ps-4">
+                This proved to be impossible using the traditional concepts of space and time. 
+                Einstein developed a new view of time first and then space. 
+                This proved to be impossible using the traditional concepts of space and time. 
+                Einstein developed a new view of time first and then space.
+              </p>
+            </div>
+          <!-- </div> -->
         </div>
-        <div class="bg-white text-dark m-4 p-4 text-start">
-          <img src="./assets/user.2.png" class="d-none d-md-block">
-          <h3 class="mb-1 fw-bold">Regina Miles</h3>
-          <p class="mb-2">Designer</p>
-          <div class="mb-3">
-            <img src="./assets/y-star.svg">
-            <img src="./assets/y-star.svg">
-            <img src="./assets/y-star.svg">
-            <img src="./assets/y-star.svg">
-            <img src="./assets/w-star.svg">
+
+
+
+        <!-- <div class="pb-4 d-md-flex gap-4">
+          <div class="bg-white text-dark m-4 p-4 text-start position-relative">
+            <img src="./assets/user.1.png" class="user d-none d-md-block">
+            <h3 class="mb-1 fw-bold ps-4">Regina Miles</h3>
+            <p class="mb-2 ps-4">Designer</p>
+            <div class="mb-3 ps-4">
+              <img src="./assets/y-star.svg">
+              <img src="./assets/y-star.svg">
+              <img src="./assets/y-star.svg">
+              <img src="./assets/y-star.svg">
+              <img src="./assets/w-star.svg">
+            </div>
+            <p class="fw-light pe-4 mb-0 me-4 ps-4">
+              This proved to be impossible using the traditional concepts of space and time. 
+              Einstein developed a new view of time first and then space. 
+              This proved to be impossible using the traditional concepts of space and time. 
+              Einstein developed a new view of time first and then space.
+            </p>
           </div>
-          <p class="fw-light pe-4 mb-0 me-4">
-            This proved to be impossible using the traditional concepts of space and time. 
-            Einstein developed a new view of time first and then space. 
-            This proved to be impossible using the traditional concepts of space and time. 
-            Einstein developed a new view of time first and then space.
-          </p>
-        </div>
+          <div class="bg-white text-dark m-4 p-4 text-start position-relative">
+            <img src="./assets/user.2.png" class="user d-none d-md-block">
+            <h3 class="mb-1 fw-bold ps-4">Regina Miles</h3>
+            <p class="mb-2 ps-4">Designer</p>
+            <div class="mb-3 ps-4">
+              <img src="./assets/y-star.svg">
+              <img src="./assets/y-star.svg">
+              <img src="./assets/y-star.svg">
+              <img src="./assets/y-star.svg">
+              <img src="./assets/w-star.svg">
+            </div>
+            <p class="fw-light pe-4 mb-0 me-4 ps-4">
+              This proved to be impossible using the traditional concepts of space and time. 
+              Einstein developed a new view of time first and then space. 
+              This proved to be impossible using the traditional concepts of space and time. 
+              Einstein developed a new view of time first and then space.
+            </p>
+          </div>
+        </div> -->
       </div>
     </section>
 
     <!-- section4 -->
     <section class="text-light text-center p-4" style="background-color: #252B42;">
-      <!-- mobile -->
-      <h2 class="fw-bold mt-4 p-4 lh-sm" style="font-size: 2.5rem;">We Are Optimists Who Love To Work Toghether</h2>
-      <!-- desktop -->
-      <h2 class="d-none d-md-block">Industry</h2>
-      <p class="m-0 pb-4 px-4">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
-      <div class="text-start p-4">
-        <div class="section4-bg-img mb-4 p-4 d-flex flex-column align-items-start justify-content-end" style="background: url('./assets/post.1.jpg') center / cover; aspect-ratio: 3/4;">
+      <div class="container">
+        <div class="row">
+          <!-- mobile -->
+          <h2 class="fw-bold my-4 lh-sm d-md-none d-inline-block col-8 mx-auto" style="font-size: 2.5rem;">We Are Optimists Who Love To Work Toghether</h2>
+          <!-- desktop -->
+          <h2 class="fw-bold mt-4 mb-0 p-4 d-none d-md-block" style="font-size: 2.5rem;">Industry</h2>
+          <p class="m-0 pb-4 col-10 col-md-5 mx-auto">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
+        </div>
+      </div>
+      <div class="text-start p-4 d-md-flex justify-content-between gap-4">
+        <div class="section4-bg-img mb-4 p-4 d-flex flex-column align-items-start justify-content-end w-100" style="background: url('./assets/post.1.jpg') center / cover; aspect-ratio: 3/4;">
           <div class="container p-0">
             <p>Tax Management</p>
             <p class="fs-5 fw-bold">Life Tips From Top Ten<br> Adventure Travelers</p>
             <button type="button" class="btn text-light rounded-pill px-4" style="background-color: #23A6F0;">View Project</button>
           </div>
         </div>
-        <div class="section4-bg-img mb-4 p-4 d-flex flex-column align-items-start justify-content-end" style="background: url('./assets/post.2.jpg') center / cover; aspect-ratio: 3/4;">
+        <div class="section4-bg-img mb-4 p-4 d-flex flex-column align-items-start justify-content-end w-100" style="background: url('./assets/post.2.jpg') center / cover; aspect-ratio: 3/4;">
           <div class="container p-0">
             <p>Tax Management</p>
             <p class="fs-5 fw-bold">Life Tips From Top Ten<br> Adventure Travelers</p>
             <button type="button" class="btn text-light rounded-pill px-4" style="background-color: #23A6F0;">View Project</button>
           </div>
         </div>
-        <div class="section4-bg-img mb-4 p-4 d-flex flex-column align-items-start justify-content-end" style="background: url('./assets/post.3.jpg') center / cover; aspect-ratio: 3/4;">
+        <div class="section4-bg-img mb-4 p-4 d-flex flex-column align-items-start justify-content-end w-100" style="background: url('./assets/post.3.jpg') center / cover; aspect-ratio: 3/4;">
           <div class="container p-0">
             <p>Tax Management</p>
             <p class="fs-5 fw-bold">Life Tips From Top Ten<br> Adventure Travelers</p>
             <button type="button" class="btn text-light rounded-pill px-4" style="background-color: #23A6F0;">View Project</button>
           </div>
         </div>
-        <div class="section4-bg-img mb-4 p-4 d-flex flex-column align-items-start justify-content-end" style="background: url('./assets/post.4.jpg') center / cover; aspect-ratio: 3/4;">
+        <div class="section4-bg-img mb-4 p-4 d-flex flex-column align-items-start justify-content-end w-100" style="background: url('./assets/post.4.jpg') center / cover; aspect-ratio: 3/4;">
           <div class="container p-0">
             <p>Tax Management</p>
             <p class="fs-5 fw-bold">Life Tips From Top Ten<br> Adventure Travelers</p>

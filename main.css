@@ -15,7 +15,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); 
+  /* background-color: rgba(0, 0, 0, 0.8);  */
+  background: linear-gradient(to right, black, transparent);
 }
 
 .bg-overlay .container {
@@ -41,4 +42,10 @@
 .section4-bg-img .container {
   position: relative; 
   z-index: 1;
+}
+
+.user {
+  position: absolute;
+  top: 2rem;
+  left: -2.5rem;
 }
