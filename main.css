@@ -1,0 +1,25 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+.header-title {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+.header-paragraph {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+.appointment-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card-body {
+    position: relative;
+}
+.new-sticker {
+    position: absolute;
+    top: -50px;
+    right: -10px;
+}
