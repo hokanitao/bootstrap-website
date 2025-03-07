@@ -23,3 +23,59 @@ body {
     top: -50px;
     right: -10px;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* section1-hero image */
+.bg-overlay {
+  position: relative;
+}
+
+.bg-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  @media (min-width: 991px) {  /* wider than lg (992px)  */
+    background: linear-gradient(to right, black, transparent);
+  }
+}
+
+.bg-overlay .container {
+  position: relative; 
+  z-index: 1;
+}
+
+/* section3 */
+.user {
+  position: absolute;
+  top: 2rem;
+  left: -2.5rem;
+}
+
+/* section4 */
+.section4-bg-img  {
+  position: relative;
+}
+
+.section4-bg-img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)); 
+}
+
+.section4-bg-img .container {
+  position: relative; 
+  z-index: 1;
+}
